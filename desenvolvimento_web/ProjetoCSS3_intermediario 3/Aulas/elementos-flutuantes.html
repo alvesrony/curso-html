@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Elementos flutuantes</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			#principal {
+				border: 5px solid red;
+				background: green;
+			}
+			.conteudo {
+				background: blue;
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 10px;
+				float: left;
+			}
+
+			/*.conteudo-zero {
+				background: red;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px;
+			}*/
+
+			/*.conteudo1 {
+				background: red;
+				border: 1px solid gray;
+				width: 150px;
+				height: 150px;
+				float: pode ser left right ou none;
+			}*/
+
+			.clear {
+				clear: /*pode ser usado: left, right, both ou none*/ left;
+			}
+
+		</style>
+		
+	</head>
+
+	<body>
+
+		<!--<div class="conteudo-zero">
+			Conteúdo 0
+		</div>-->
+
+	<div id="principal">
+
+		<div class="conteudo">
+			Conteúdo 1
+		</div>
+
+		<div class="conteudo">
+			Conteúdo 2
+		</div>
+
+		<div class="conteudo">
+			Conteúdo 3
+		</div>
+
+		<div>
+
+	<p class="clear">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit sapien vitae egestas tempus. Suspendisse ultrices, ipsum eu consequat porta, ex risus blandit nisl, vel pretium ex dui nec mi. Vivamus ullamcorper ante leo, nec pretium felis ornare id. Nunc venenatis felis ac dapibus dignissim. Mauris tincidunt suscipit nisl sed bibendum. Vivamus commodo urna a posuere pretium. Quisque id sapien quam.
+	</p>
+		</div>
+
+		<!-- Usa-se um clear em uma div para poder usar float dentro de outra div sem bugar a div principal como mostrado a baixo.
+		<div class="clear"></div> -->
+
+	</div>
+
+		<div>
+			<!--<p class="clear">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit sapien vitae egestas tempus. Suspendisse ultrices, ipsum eu consequat porta, ex risus blandit nisl, vel pretium ex dui nec mi. Vivamus ullamcorper ante leo, nec pretium felis ornare id. Nunc venenatis felis ac dapibus dignissim. Mauris tincidunt suscipit nisl sed bibendum. Vivamus commodo urna a posuere pretium. Quisque id sapien quam.-->
+
+		</div>
+
+		
+	</body>
+
+</html>

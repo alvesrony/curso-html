@@ -1,0 +1,234 @@
+/*AULA 53.SELETORES*/
+
+/*********************************************
+seletor universal
+* {
+	border: 1px solid red;
+}*/
+
+/*********************************************
+seletor de texto
+h1 {
+	color: green;
+}*/
+
+/*********************************************
+seletor de classe
+.verde {
+	color: green;
+}
+
+p.verde {
+	color: green;
+}*/
+
+/*********************************************
+seletor de ID
+#cabecalho {
+	border: 1px solid blue;
+}*/
+
+/*********************************************
+seletor de filho
+li>a {
+	text-decoration: none;
+	color: red;
+}*/
+
+/*********************************************
+seletor de descendente
+div a {
+	color: green;
+	text-decoration: none;
+}*/
+
+/*********************************************
+seletor de irmão adjacente
+h1+p {
+	color: red;
+}*/
+
+/*********************************************
+seletor de irmão geral
+h1~p {
+	 color: pink;
+}*/
+
+
+
+
+
+
+
+
+
+
+/*AULA 54.HERANÇA E ESPECIFICIDADE*/
+/*********************************************
+Herança e especificidade*/
+/*Seletores iguais, exeção important
+#pagina p {
+	color: red !important;
+}
+
+#pagina p {
+	color: blue;
+}*/
+
+/* se um seletor for mais específico que outro
+a regra mais específica será aplicada
+(terá procedência sobre regras mais gerais)
+*/
+/*
+* {
+	color: red;
+}
+
+h2 {
+	color: blue;
+}
+
+h2.verde {
+	color: green;
+}
+
+h2#amarelo {
+	color: yellow;
+}*/
+
+
+
+
+
+
+
+/*AULA 55.NAVEGAÇÃO VERTICAL*/
+/*********************************************
+Barra de navegação vertical*/
+/*
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}*/
+/*
+li {
+	border: 1px solid red;
+	padding: 5px 20px;
+	background: url(../imagens/seta.png) no-repeat left center;
+}*/
+/*
+ul a {
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 30px;
+	line-height: 40px;
+	background: #f7b600 url(../imagens/menu.png) no-repeat;
+}
+
+ul a:hover {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+#home .home a,
+#sobre .sobre a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}*/
+
+
+
+
+
+
+/*AULA 55.NAVEGAÇÃO HORIZONTAL*/
+/*********************************************
+Barra de navegação horizontal*/
+/*
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+	background: #159cb0 url(../navegacao-horizontal/imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+}
+
+ul li {
+	float: left;
+}
+
+ul a {
+	display: block;
+	padding: 0 2em;
+	line-height: 2em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../navegacao-horizontal/imagens/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a {
+	background: none;
+}
+
+ul a:hover {
+	color: #085662;
+	background: #44cade;
+}
+
+#home .home a,
+#sobre .sobre a {
+	color: #085662;
+	background: #44cade;
+}*/
+
+
+
+
+
+/*AULA 58.NAVEGAÇÃO COM ABAS*/
+/*********************************************
+Barra de navegação com abas*/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+}
+
+ul li {
+	float: left;
+	background: url(../barra-com-abas/imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url(../barra-com-abas/imagens/aba-esquerda.png) no-repeat top left;
+	color: #fff;
+}
+
+ul a:hover {
+	color: #894a1f;
+}
+
+ul #atual {
+	background: url(../barra-com-abas/imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+	background: url(../barra-com-abas/imagens/aba-esquerda-atual.png) no-repeat top left;
+}

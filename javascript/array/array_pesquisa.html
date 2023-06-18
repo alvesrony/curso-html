@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JavaScript</title>
+
+		<script>
+
+			//Usa-se o indexOf para ver se o elemento existe ou não dentro do Array, retornando o número onde está localizado ou -1 (caso não exista o conteúdo pesquisado)
+
+			var lista_frutas = Array()
+
+			lista_frutas[0] = 'Banana'
+			lista_frutas[1] = 'Maça'
+			lista_frutas[2] = 'Morango'
+			lista_frutas[3] = 'Uva'
+
+			var auxiliar = lista_frutas.indexOf('Morango')
+
+			if (auxiliar === -1) {
+				console.log('Elemento não existe')
+			} else {
+				console.log('Elemento existe e está na posição ' + auxiliar)
+			}
+			
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>JavaScript</title>
+
+		<script>
+
+			function soma() {
+				var resultado = 0
+				for(var i in arguments){
+					resultado += arguments[i]
+				}
+				return resultado
+			}
+			// Se for colocado uma string, o valor é concatenado com a soma.
+			console.log(soma(7, 5, 3.2, 'texto'))
+
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+
+</html>
